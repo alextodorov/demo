@@ -1,17 +1,17 @@
 # demo
 A simple demo project
 
-##Installation Instructions
+## Installation Instructions
 
  1. ```git clone https://github.com/alextodorov/demo.git```
  2. ```cd demo```
  3. ```composer install```
  
- ##Run
+ ## Run
  
  1. ```php -S localhost:8080 -t public/```
  
- ###Requests
+ ### Requests
  1. Get access token:
  ```curl -X POST http://localhost:8080/get-token -i -H 'Content-type: application/json' -H 'Authorization: Bearer c2VjcmV0X3VzZXI6JnNkam8x'```
  
