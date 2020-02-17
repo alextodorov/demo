@@ -15,7 +15,7 @@ class AccessModel implements AuthInterface
         $this->config = $config;
     }
 
-    public function getAccessToken()
+    public function getAccessToken(): string
     {
         $header = $_SERVER['HTTP_AUTHORIZATION'];
         $auth = explode(' ', $header);
