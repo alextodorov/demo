@@ -55,7 +55,7 @@ final class Application
             if ($_SERVER['REQUEST_URI'] !== '/get-token') {
                 $accessModel = new AccessModel($this->auth);
 
-                $accessModel->checkAccess($_SERVER['HTTP_AUTHORIZATION']);
+                $accessModel->checkAccess($_SERVER['HTTP_AUTHORIZATION'] ?? '');
             }
 
             call_user_func([new $class($this->auth), $this->routes[$_SERVER['REQUEST_URI']]['call'][1]]);
